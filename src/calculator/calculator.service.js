@@ -12,12 +12,16 @@ export async function formatNumber(number) {
 
 export async function subtract(a, b) {
   const result = a - b;
-  return formatNumber(result);
+
+  const formattedResult = await formatNumber(result);
+  return formattedResult;
 }
 
 export async function add(a, b) {
   const result = a + b;
-  return formatNumber(result);
+
+  const formattedResult = await formatNumber(result);
+  return formattedResult;
 }
 
 export async function divide(a, b) {
