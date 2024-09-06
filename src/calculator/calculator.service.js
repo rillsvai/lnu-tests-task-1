@@ -12,16 +12,12 @@ export async function formatNumber(number) {
 
 export async function subtract(a, b) {
   const result = a - b;
-
-  const formattedResult = await formatNumber(result);
-  return formattedResult;
+  return await formatNumber(result);
 }
 
 export async function add(a, b) {
   const result = a + b;
-
-  const formattedResult = await formatNumber(result);
-  return formattedResult;
+  return await formatNumber(result);
 }
 
 export async function divide(a, b) {
@@ -30,7 +26,7 @@ export async function divide(a, b) {
     return NaN;
   }
   const result = a / b;
-  return formatNumber(result);
+  return await formatNumber(result);
 }
 
 export async function calculateModulus(a, b) {
@@ -39,7 +35,7 @@ export async function calculateModulus(a, b) {
     return NaN;
   }
   const result = a % b;
-  return formatNumber(result);
+  return await formatNumber(result);
 }
 
 export async function calculateFactorial(n) {
@@ -53,10 +49,10 @@ export async function calculateFactorial(n) {
     result *= i;
   }
 
-  return formatNumber(result);
+  return await formatNumber(result);
 }
 
 export async function calculateAbs(a) {
   const result = Math.abs(a);
-  return formatNumber(result);
+  return await formatNumber(result);
 }
