@@ -13,7 +13,7 @@ jest.mock("./calculator.utils", () => ({
   formatNumber: jest.fn(),
 }));
 
-describe("Calculator Service", () => {
+describe("calculator service", () => {
   describe("add()", () => {
     it("should correctly add two numbers and call formatNumber", async () => {
       const a = 5;

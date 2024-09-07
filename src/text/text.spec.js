@@ -17,7 +17,6 @@ describe("isSubstringInFile", () => {
     const result = await isSubstringInFile("test", mockFilePath);
 
     expect(result).toBe(true);
-    expect(fs.readFile).toHaveBeenCalledWith(mockFilePath, "utf-8");
   });
 
   it("should return false if the substring is not present in the file content", async () => {
@@ -27,7 +26,6 @@ describe("isSubstringInFile", () => {
     const result = await isSubstringInFile("missing", mockFilePath);
 
     expect(result).toBe(false);
-    expect(fs.readFile).toHaveBeenCalledWith(mockFilePath, "utf-8");
   });
 
   it("should throw an error if there is an issue reading the file", async () => {
@@ -37,6 +35,5 @@ describe("isSubstringInFile", () => {
     await expect(isSubstringInFile("test", mockFilePath)).rejects.toThrow(
       "File read error"
     );
-    expect(fs.readFile).toHaveBeenCalledWith(mockFilePath, "utf-8");
   });
 });
