@@ -9,7 +9,8 @@
   "mutate": [
     "src/text/text.service.js",
     "src/calculator/calculator.service.js",
-    "src/calculator/calculator.utils.js"
+    "src/calculator/calculator.utils.js",
+    "src/list/list.service.js"
   ],
   "mutator": {
     "excludedMutations": ["StringLiteral"]
