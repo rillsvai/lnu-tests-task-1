@@ -1,4 +1,4 @@
-import { formatNumber } from "./calculator.utils";
+import { formatNumber } from "./calculator.utils.js";
 
 export async function subtract(a, b) {
   const result = a - b;
