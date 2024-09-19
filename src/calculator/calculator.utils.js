@@ -9,4 +9,3 @@ export async function formatNumber(number) {
     return number.toString(supportedNumberFormats.dec);
   }
 }
-//
