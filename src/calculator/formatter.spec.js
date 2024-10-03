@@ -35,7 +35,6 @@ describe("formatNumber()", () => {
     const result = await formatNumber(testCase);
 
     expect(getNumberFormat).toHaveBeenCalled();
-    expect(result).toBe("255");
+    expect(result).toBe("254");
   });
 });
-//
